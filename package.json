@@ -1,0 +1,24 @@
+{
+  "name": "playwright-cucumber-pageobjects",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js",
+    "test:headed": "HEADLESS=false cucumber-js",
+    "allure:generate": "rm -rf allure-report && allure generate --output allure-report",
+    "allure:open": "allure open ./allure-report",
+    "report": "npm run allure:generate && npm run allure:open"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@cucumber/cucumber": "^13.0.0",
+    "@cucumber/messages": "^33.0.3",
+    "@playwright/test": "^1.61.0",
+    "allure": "^3.12.0",
+    "allure-cucumberjs": "^3.10.0",
+    "playwright": "^1.61.0"
+  }
+}
